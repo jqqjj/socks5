@@ -8,4 +8,3 @@ The package is now supports features bellow:
 * User/Password authentication
 * Support for the CONNECT command (Supported TCP)
 * Support for the UDP ASSOCIATE  command (Supported UDP)
-* Rules to do granular filtering of commands
