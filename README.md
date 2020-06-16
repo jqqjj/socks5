@@ -1,10 +1,21 @@
 # socks5
-socks5 server build with go/golang
+socks5 proxy server builds with go/golang
 
-## Feature
+### Features
+* Both TCP and UDP supported
+* "No Auth" authentication supported
+* User/Password authentication supported
 
-The package is now supports features bellow:
-* "No Auth" mode
-* User/Password authentication
-* Support for the CONNECT command (TCP Supported)
-* Support for the UDP ASSOCIATE  command (UDP Supported)
+## Install
+```
+$ go get github.com/jqqjj/socks5
+```
+
+## Usage
+* -p
+  * port on listen (default 1080)
+* -user (option)
+  * username
+* -pwd (option)
+  * password
+        
