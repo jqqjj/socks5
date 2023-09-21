@@ -87,7 +87,9 @@ func (s *server) closeRequests() {
 func connHandle(conn *net.TCPConn, s *server) {
 	r := &requestList{
 		prev: nil, next: nil,
-		data: Request{ClientConn: conn, server: s},
+		data: Request{ClientConn: conn, server: s, tcpGram: TCPProtocol{
+			authHandle: s.authHandle,
+		}},
 	}
 	s.insertRequestList(r)
 	r.data.Process()
