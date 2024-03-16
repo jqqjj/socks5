@@ -8,7 +8,7 @@ socks5 proxy server builds with go/golang
 
 ## Install
 ```
-$ go get github.com/jqqjj/socks5
+$ go install github.com/jqqjj/socks5@master
 ```
 
 ## Usage
